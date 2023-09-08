@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: OpenSans;
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
 a {
     text-decoration: none;
     color: #FFF;
@@ -20,7 +25,8 @@ body {
 }
 
 .header {
-    font-family: Open Sans;
+    font-family: "OpenSans", "Ariya", sans-serif;
+    white-space: nowrap;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -42,7 +48,7 @@ body {
 }
 
 .main {
-    margin: 10% 25% 15% 20%;
+    margin: 10% 10% 15% 10%;
 }
 
 .conteiner {
@@ -52,21 +58,21 @@ body {
     align-items: center;
     /* Добавляем flex-контейнер */
     justify-content: space-between;
-    padding-left: 1%;
-    padding-right: 1%;
+    /* padding-left: 1%;
+    padding-right: 1%; */
 }
 
 
 .text {
     padding: 1% 0% 0% 1%;
-    width: 40%;
+    width: 43%;
     margin-left: 8%;
 }
 
 .text h3 {
     padding: 1% 1% 1% 1%;
     color: #3A68B8;
-    font-family: Open Sans;
+    font-family: "OpenSans", "Ariya", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -77,7 +83,7 @@ body {
 .text h1 {
     padding: 1% 1% 10% 1%;
     color: #FFF;
-    font-family: Open Sans;
+    font-family: "OpenSans", "Ariya", sans-serif;
     font-size: 55px;
     font-style: normal;
     font-weight: 800;
@@ -87,7 +93,7 @@ body {
 .text p {
     padding: 1% 1% 10% 1%;
     color: #FFF;
-    font-family: Open Sans;
+    font-family: "OpenSans", "Ariya", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -122,6 +128,7 @@ body {
     background: var(--3-a-68-b-8, #3A68B8);
     color: var(--ffffff, #FFF);
     white-space: nowrap;
+    font-family: "OpenSans", "Ariya", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -139,6 +146,7 @@ body {
     border-radius: 5px;
     background: var(--3-a-68-b-8, #3A68B8);
     color: var(--ffffff, #FFF);
+    font-family: "OpenSans", "Ariya", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
