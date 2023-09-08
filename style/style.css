@@ -5,7 +5,12 @@
 
 @font-face {
     font-family: OpenSans;
-    src: url("../fonts/OpenSans-Regular.ttf");
+    src: url("../fonts/OpenSans-Light.ttf")format("ttf");
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url("../fonts/OpenSans-SemiBold.ttf")format("ttf");
 }
 
 a {
@@ -65,14 +70,14 @@ body {
 
 .text {
     padding: 1% 0% 0% 1%;
-    width: 43%;
+    width: 60%;
     margin-left: 8%;
 }
 
 .text h3 {
     padding: 1% 1% 1% 1%;
     color: #3A68B8;
-    font-family: "OpenSans", "Ariya", sans-serif;
+    font-family: "OpenSansBold", "Ariya", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -81,7 +86,7 @@ body {
 }
 
 .text h1 {
-    padding: 1% 1% 10% 1%;
+    padding: 1% 1% 7% 1%;
     color: #FFF;
     font-family: "OpenSans", "Ariya", sans-serif;
     font-size: 55px;
@@ -91,7 +96,7 @@ body {
 }
 
 .text p {
-    padding: 1% 1% 10% 1%;
+    padding: 1% 1% 1% 1%;
     color: #FFF;
     font-family: "OpenSans", "Ariya", sans-serif;
     font-size: 18px;
@@ -102,13 +107,13 @@ body {
 }
 
 .contant {
-    width: 30%;
-    padding: 0% 11% 0% 1%;
+    width: 20%;
+    padding: 0% 11% 10% 1%;
 }
 
 .button {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     /* Равномерное распределение между элементами */
     align-items: center;
     /* Выравнивание элементов по вертикали */
@@ -120,10 +125,10 @@ body {
     height: 100%;
     display: inline-flex;
     padding: 2% 5% 2% 5%;
-    margin: 2% 25% 5% 1%;
+    margin: 2% 20% 5% 1%;
     align-items: center;
     /* Выравнивание по вертикали */
-    gap: 5%;
+    gap: 1%;
     border-radius: 5px;
     background: var(--3-a-68-b-8, #3A68B8);
     color: var(--ffffff, #FFF);
@@ -141,8 +146,7 @@ body {
     padding: 2% 5% 2% 5%;
     margin: 2% 1% 5% 1%;
     align-items: center;
-    /* Выравнивание по вертикали */
-    gap: 5%;
+    gap: 1%;
     border-radius: 5px;
     background: var(--3-a-68-b-8, #3A68B8);
     color: var(--ffffff, #FFF);
@@ -154,20 +158,21 @@ body {
 }
 
 .banner_labels {
-    padding: 20% 10% 15% 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4%;
     margin-right: calc(50% - 640px);
     margin-left: calc(50% - 640px);
+    gap: 5%;
+    padding: 10% 10% 18% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
-h1 {
+/* h1 {
     font-family: Open Sans;
     font-size: 55px;
     font-style: normal;
     font-weight: 800;
     line-height: 130%;
     padding: 10px 0;
-}
+} */
