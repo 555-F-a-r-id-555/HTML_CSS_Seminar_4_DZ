@@ -13,6 +13,11 @@
     src: url("../fonts/OpenSans-Bold.ttf")format("ttf");
 }
 
+.center {
+    margin-right: calc(50% - 640px);
+    margin-left: calc(50% - 640px);
+}
+
 a {
     text-decoration: none;
     color: #FFF;
@@ -39,8 +44,6 @@ body {
 }
 
 .header__nav_menu {
-    margin-right: calc(50% - 640px);
-    margin-left: calc(50% - 640px);
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -57,8 +60,6 @@ body {
 }
 
 .conteiner {
-    margin-right: calc(50% - 640px);
-    margin-left: calc(50% - 640px);
     display: flex;
     align-items: center;
     /* Добавляем flex-контейнер */
@@ -158,11 +159,97 @@ body {
 }
 
 .banner_labels {
-    margin-right: calc(50% - 640px);
-    margin-left: calc(50% - 640px);
     gap: 5%;
     padding: 12% 10% 10% 10%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 10%;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    padding-bottom: 7%;
+}
+
+.cell_item {
+    border: 1px solid #0d1a2e;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background: #132035;
+}
+
+.item4_big {
+    border: 1px solid #0d1a2e;
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    background: #132035;
+}
+
+
+.cell__img {
+    width: 98px;
+    height: 103px;
+}
+
+.cell__h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "OpenSans", "Ariya", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.cell__p {
+    color: #FFF;
+    text-align: center;
+    font-family: "OpenSans", "Ariya", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+
+.big__img {
+    width: 306px;
+    height: 322px;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.big__h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "OpenSans", "Ariya", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    gap: 1%;
+}
+
+.big__p {
+    color: #FFF;
+    text-align: center;
+    font-family: "OpenSans", "Ariya", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
 }
